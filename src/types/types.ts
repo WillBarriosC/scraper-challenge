@@ -12,3 +12,14 @@ export interface FailedDownload {
   attempts: number;
   reason: string;
 }
+
+export interface DocumentRecord {
+  rowNumber: number;
+  expediente: string;
+  administrado: string;
+  unidadFiscalizable: string;
+  sector: string;
+  resolucion: string;
+  pdfUrl?: string;
+  fileName: string;
+}
