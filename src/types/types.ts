@@ -5,3 +5,10 @@ export interface SearchFilters {
   sector: string;
   resolucion: string;
 }
+
+export interface FailedDownload {
+  fileName: string;
+  url: string;
+  attempts: number;
+  reason: string;
+}
